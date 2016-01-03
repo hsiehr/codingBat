@@ -58,6 +58,22 @@ public boolean nearHundred(int n) {
 	  return false;
 }
 
+/* posNeg: Given 2 int values, return true if one is negative and one is positive. Except if the parameter "negative" is true, then return true only if both are negative. */
+public boolean posNeg(int a, int b, boolean negative) {
+	  if (a > 0 && b < 0 && (negative != true)) {
+		    return true;
+	  }
+	  if (a < 0 && b > 0 && (negative != true)) {
+			return true;
+	  }
+	  if (a < 0 && b < 0 && (negative == true)) {
+			return true;
+	  }
+	  return false;
+} 
+
+/* notString: 
+ * Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged. Note: use .equals() to compare 2 strings. */
 
 
 
